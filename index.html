@@ -3,100 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>American — Links Oficiais</title>
+    <title>AMERICAN - Oficial</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            background-color: #050505;
+            background-color: #0d1117; /* Fundo escuro igual ao Roblox */
             color: white;
             font-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
+            padding: 40px 20px;
+        }
+
+        /* Foto de Perfil com Brilho Verde */
+        .profile-container {
+            position: relative;
+            margin-bottom: 20px;
         }
 
         .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid #1da1f2;
-            margin-bottom: 15px;
-            background-image: url('https://github.com/mumuloko56-xy.png');
+            width: 150px;
+            height: 150px;
+            border-radius: 25px; /* Bordas arredondadas igual ao print */
+            border: 4px solid #4CAF50;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.6);
+            background-image: url('https://github.com/mumuloko56-xy.png'); /* Sua foto do GitHub */
             background-size: cover;
         }
 
         h1 {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 3.5rem;
-            letter-spacing: 3px;
+            font-size: 3rem;
+            color: #4CAF50;
+            letter-spacing: 2px;
             margin-bottom: 5px;
-            text-shadow: 2px 2px 10px rgba(29, 161, 242, 0.5);
         }
 
-        p {
+        .subtitle {
             color: #888;
-            margin-bottom: 30px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .announcement {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .highlight-green { color: #4CAF50; }
+
+        /* Imagem do Banner (Blox Fruits) */
+        .banner-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            border: 2px solid #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .video-tag {
+            color: #4CAF50;
+            font-weight: bold;
             font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            margin-bottom: 25px;
         }
 
         .links-container {
             width: 100%;
-            max-width: 350px;
+            max-width: 400px;
         }
 
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.05);
-            color: white;
-            padding: 18px;
-            margin-bottom: 12px;
-            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
             text-decoration: none;
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
             text-transform: uppercase;
+            transition: transform 0.2s;
         }
 
-        .btn:hover {
-            background: white;
-            color: black;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
-        }
+        .btn:active { transform: scale(0.95); }
 
-        /* Cores de destaque no hover para ficar igual ao Replit */
-        .discord:hover { border-color: #5865F2; box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4); }
-        .youtube:hover { border-color: #FF0000; box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4); }
-        .insta:hover { border-color: #E1306C; box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4); }
+        /* Cores Exatas do Print */
+        .btn-discord { background-color: #5865F2; }
+        .btn-youtube { background-color: #FF0000; }
+        .btn-insta { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+
+        .btn i { margin-right: 10px; }
     </style>
 </head>
 <body>
 
-    <div class="profile-img"></div>
+    <div class="profile-container">
+        <div class="profile-img"></div>
+    </div>
+
     <h1>AMERICAN</h1>
-    <p>Links Oficiais</p>
+    <div class="subtitle">Youtuber & Brainrot Seller</div>
+
+    <div class="announcement">
+        AMRC MELHOR TRIPULAÇÃO, <span class="highlight-green">entre no nosso Discord e faça parte!</span>
+    </div>
+
+    <img src="https://via.placeholder.com/400x200/1a1a1a/4CAF50?text=Sua+Imagem+Blox+Fruits" class="banner-img" alt="Banner">
+    
+    <div class="video-tag">📺 VÍDEO NOVO: ENCAREI 4 NO BLOX FRUITS!</div>
 
     <div class="links-container">
-        <a href="#" class="btn discord">Discord</a>
-        <a href="#" class="btn youtube">YouTube</a>
-        <a href="#" class="btn insta">Instagram</a>
-        <a href="#" class="btn">Loja do Brazucas</a>
-        <a href="#" class="btn" style="border-color: gold; color: gold;">Sorteio Ativo</a>
+        <a href="LINK_DO_DISCORD" class="btn btn-discord">💬 DISCORD OFICIAL</a>
+        <a href="LINK_DO_YOUTUBE" class="btn btn-youtube">📸 CANAL YOUTUBE</a>
+        <a href="LINK_DO_INSTA" class="btn btn-insta">📷 INSTAGRAM</a>
     </div>
 
 </body>
 </html>
-
-
