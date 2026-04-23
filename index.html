@@ -6,8 +6,10 @@
     <title>American — Links Oficiais</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
-            background-color: #0f0f0f;
+            background-color: #050505;
             color: white;
             font-family: 'Inter', sans-serif;
             display: flex;
@@ -15,58 +17,86 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            margin: 0;
             padding: 20px;
         }
-        .container {
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #1da1f2;
+            margin-bottom: 15px;
+            background-image: url('https://github.com/mumuloko56-xy.png');
+            background-size: cover;
         }
+
         h1 {
-            font-family: 'Bebas Neue', cursive;
-            font-size: 3rem;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-            color: #ffffff;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            letter-spacing: 3px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 10px rgba(29, 161, 242, 0.5);
         }
+
         p {
+            color: #888;
             margin-bottom: 30px;
-            color: #aaaaaa;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
+
+        .links-container {
+            width: 100%;
+            max-width: 350px;
+        }
+
         .btn {
-            display: block;
-            background: #1da1f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
             color: white;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 12px;
+            border-radius: 15px;
             text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.2s, background 0.2s;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
             text-transform: uppercase;
         }
+
         .btn:hover {
-            transform: scale(1.05);
-            background: #1991db;
+            background: white;
+            color: black;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
         }
-        /* Cores diferentes para cada botão se quiser */
-        .discord { background: #5865F2; }
-        .youtube { background: #FF0000; }
-        .instagram { background: #E1306C; }
-        .loja { background: #00FF00; color: black; }
+
+        /* Cores de destaque no hover para ficar igual ao Replit */
+        .discord:hover { border-color: #5865F2; box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4); }
+        .youtube:hover { border-color: #FF0000; box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4); }
+        .insta:hover { border-color: #E1306C; box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4); }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>AMERICAN</h1>
-        <p>Links Oficiais — Discord, YouTube e muito mais!</p>
-        
-        <a href="COLOQUE_SEU_LINK_AQUI" class="btn discord">DISCORD</a>
-        <a href="COLOQUE_SEU_LINK_AQUI" class="btn youtube">YOUTUBE</a>
-        <a href="COLOQUE_SEU_LINK_AQUI" class="btn instagram">INSTAGRAM</a>
-        <a href="COLOQUE_SEU_LINK_AQUI" class="btn loja">LOJA DO BRAZUCAS</a>
+
+    <div class="profile-img"></div>
+    <h1>AMERICAN</h1>
+    <p>Links Oficiais</p>
+
+    <div class="links-container">
+        <a href="#" class="btn discord">Discord</a>
+        <a href="#" class="btn youtube">YouTube</a>
+        <a href="#" class="btn insta">Instagram</a>
+        <a href="#" class="btn">Loja do Brazucas</a>
+        <a href="#" class="btn" style="border-color: gold; color: gold;">Sorteio Ativo</a>
     </div>
+
 </body>
 </html>
+
 
